@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: hartanto-profile/index.html
+  upload: hartanto-profile//index.html
+
+- url: /(.*)
+  static_files: hartanto-profile//\1
+  upload: hartanto-profile//(.*)
